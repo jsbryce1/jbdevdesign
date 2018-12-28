@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en-US"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Jared Bryce &ndash; Building the web around you</title><link rel="dns-prefetch" href="//s.w.org"><script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/jsbryce1.github.io\/devdesign\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.0.2"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style><link rel="stylesheet" id="airi-bootstrap-css" href="https://jsbryce1.github.io/devdesign/wp-content/themes/airi/css/bootstrap/bootstrap.min.css" type="text/css" media="all"><link rel="stylesheet" id="wp-block-library-css" href="https://jsbryce1.github.io/devdesign/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all"><link rel="stylesheet" id="contact-form-7-css" href="https://jsbryce1.github.io/devdesign/wp-content/plugins/contact-form-7/includes/css/styles.css" type="text/css" media="all"><link rel="stylesheet" id="fsn_divider-css" href="https://jsbryce1.github.io/devdesign/wp-content/plugins/fusion-extension-divider/includes/css/fusion-extension-divider.css" type="text/css" media="all"><link rel="stylesheet" id="flexslider-css" href="https://jsbryce1.github.io/devdesign/wp-content/plugins/fusion-extension-gallery/includes/utilities/flexslider/flexslider.css" type="text/css" media="all"><link rel="stylesheet" id="photoswipe-css" href="https://jsbryce1.github.io/devdesign/wp-content/plugins/fusion-extension-gallery/includes/utilities/photoswipe/photoswipe.css" type="text/css" media="all"><link rel="stylesheet" id="photoswipe_skin-css" href="https://jsbryce1.github.io/devdesign/wp-content/plugins/fusion-extension-gallery/includes/utilities/photoswipe/default-skin/default-skin.css" type="text/css" media="all"><link rel="stylesheet" id="video_js-css" href="https://jsbryce1.github.io/devdesign/wp-content/plugins/fusion-extension-gallery/includes/utilities/video-js/video-js.min.css" type="text/css" media="all"><link rel="stylesheet" id="fsn_gallery-css" href="https://jsbryce1.github.io/devdesign/wp-content/plugins/fusion-extension-gallery/includes/css/fusion-extension-gallery.css" type="text/css" media="all"><link rel="stylesheet" id="fsn_image-css" href="https://jsbryce1.github.io/devdesign/wp-content/plugins/fusion-extension-image/includes/css/fusion-extension-image.css" type="text/css" media="all"><link rel="stylesheet" id="fsn_map-css" href="https://jsbryce1.github.io/devdesign/wp-content/plugins/fusion-extension-map/includes/css/fusion-extension-map.css" type="text/css" media="all"><link rel="stylesheet" id="fsn_menu-css" href="https://jsbryce1.github.io/devdesign/wp-content/plugins/fusion-extension-menu/includes/css/fusion-extension-menu.css" type="text/css" media="all"><link rel="stylesheet" id="fsn_post_details-css" href="https://jsbryce1.github.io/devdesign/wp-content/plugins/fusion-extension-post-details/includes/css/fusion-extension-post-details.css" type="text/css" media="all"><link rel="stylesheet" id="fsn_sidebar-css" href="https://jsbryce1.github.io/devdesign/wp-content/plugins/fusion-extension-sidebar/includes/css/fusion-extension-sidebar.css" type="text/css" media="all"><link rel="stylesheet" id="fsn_video-css" href="https://jsbryce1.github.io/devdesign/wp-content/plugins/fusion-extension-video/includes/css/fusion-extension-video.css" type="text/css" media="all"><link rel="stylesheet" id="bootstrap-css" href="https://jsbryce1.github.io/devdesign/wp-content/plugins/fusion/includes/bootstrap/front/css/bootstrap.min.css" type="text/css" media="all"><link rel="stylesheet" id="fsn_bootstrap-css" href="https://jsbryce1.github.io/devdesign/wp-content/plugins/fusion/includes/css/fusion-bootstrap.css" type="text/css" media="all"><link rel="stylesheet" id="fsn_core-css" href="https://jsbryce1.github.io/devdesign/wp-content/plugins/fusion/includes/css/fusion-core.css" type="text/css" media="all"><link rel="stylesheet" id="airi-style-css" href="https://jsbryce1.github.io/devdesign/wp-content/themes/airi/style.css" type="text/css" media="all"><link rel="stylesheet" id="airi-font-awesome-css" href="https://jsbryce1.github.io/devdesign/wp-content/themes/airi/css/font-awesome/css/font-awesome.min.css" type="text/css" media="all"><link rel="stylesheet" id="elementor-icons-css" href="https://jsbryce1.github.io/devdesign/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css" type="text/css" media="all"><link rel="stylesheet" id="elementor-animations-css" href="https://jsbryce1.github.io/devdesign/wp-content/plugins/elementor/assets/lib/animations/animations.min.css" type="text/css" media="all"><link rel="stylesheet" id="elementor-frontend-css" href="https://jsbryce1.github.io/devdesign/wp-content/plugins/elementor/assets/css/frontend.min.css" type="text/css" media="all"><link rel="stylesheet" id="elementor-post-203-css" href="https://jsbryce1.github.io/devdesign/wp-content/uploads/elementor/css/post-203.css" type="text/css" media="all"><link rel="stylesheet" id="kirki-styles-airi-css" href="https://jsbryce1.github.io/devdesign/wp-content/plugins/kirki/assets/css/kirki-styles.css" type="text/css" media="all"><style id="kirki-styles-airi-inline-css" type="text/css">
+h1,h2,h3,h4,h5,h6,.site-title{font-family:"Work Sans", Helvetica, Arial, sans-serif;font-weight:500;}body{font-family:"Work Sans", Helvetica, Arial, sans-serif;font-weight:400;font-size:16px;}.site-title{font-size:36px;}.site-description{font-size:16px;}.main-navigation ul ul li{font-size:13px;}.single-post .entry-title{font-size:36px;color:#191919;}.widget-area .widget-title{font-size:24px;}.widget-area .widget{font-size:16px;}.sidebar-column .widget-title{font-size:20px;}.sidebar-column .widget{font-size:16px;}.site-info{font-size:13px;}.woocommerce div.product .woocommerce-tabs ul.tabs li.active a,.product div.entry-summary p.price, .product div.entry-summary span.price,.athemes-blog:not(.airi_athemes_blog_skin) .posted-on a,.athemes-blog:not(.airi_athemes_blog_skin) .byline a:hover,.testimonials-section.style1:before,.single-post .read-more-link .gt,.blog-loop .read-more-link .gt,.single-post .posted-on a,.blog-loop .posted-on a,.entry-title a:hover,.airi_recent_entries .post-date,.menuStyle3 .top-bar .contact-item .fa,.menuStyle4 .contact-area .contact-block .contact-icon,.widget_categories li:hover::before,.widget_categories li:hover a{color:#f0437e;}.product .single_add_to_cart_button.button.alt,.menuStyle4 .contact-area .contact-block .contact-icon,button,.button,input[type="button"],input[type="reset"],input[type="submit"]{border-color:#f0437e;}.woocommerce-checkout button.button.alt,.woocommerce-checkout button.button.alt:hover,.woocommerce-cart .cart-collaterals .cart_totals .button:hover,.woocommerce-cart .cart-collaterals .cart_totals .button,.product .single_add_to_cart_button.button.alt:hover,.product .single_add_to_cart_button.button.alt,.woocommerce ul.products li.product .button,.menuStyle2 .main-navigation a:hover:after, .menuStyle2 .main-navigation .current-menu-item:after,.comments-area .comment-reply-link:hover,.menuStyle4 .main-navigation .header-cta:before,.menuStyle4 .main-navigation .header-cta,button,.button,input[type="button"],input[type="reset"],input[type="submit"],.menuStyle3 .main-navigation a:hover:after,.menuStyle3 .main-navigation .current-menu-item:after{background-color:#f0437e;}.menuStyle1 .site-title a{color:#ffffff;}.menuStyle1 .sticky-wrapper.is-sticky .site-title a{color:#191919;}.menuStyle1 .site-description{color:#ffffff;}.menuStyle1 .sticky-wrapper.is-sticky .site-description{color:#191919;}.menuStyle1 .main-navigation a, .menuStyle1 .fa-search{color:#ffffff;}.menuStyle1 .sticky-wrapper.is-sticky .main-navigation a, .menuStyle1 .sticky-wrapper.is-sticky .fa-search{color:#ffffff;}.menuStyle1 .is-sticky .site-header{background-color:#13151d;}#site-navigation ul ul li a{color:#1c1c1c;}#site-navigation ul ul li{background-color:#f7f7f7;}.entry-title a{color:#191919;}.single-post .post-cat, .blog-loop .post-cat{background-color:#eff1f4;}.single-post .entry-meta, .blog-loop .entry-meta{color:#bfbfbf;}.single-post .entry-meta .byline a, .blog-loop .entry-meta .byline a{color:#595959;}.single-post .entry-content, .blog-loop .entry-content{color:#595959;}.widget .widget-title{color:#191919;}.widget{color:#707070;}.widget a{color:#595959;}
+</style><link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Londrina+Shadow%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CLondrina+Sketch%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;ver=5.0.2" type="text/css" media="all"><script type="text/javascript" src="https://jsbryce1.github.io/devdesign/wp-includes/js/jquery/jquery.js"></script><script type="text/javascript" src="https://jsbryce1.github.io/devdesign/wp-includes/js/jquery/jquery-migrate.min.js"></script><link rel="icon" href="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-16-at-5.10.50-PM-150x150.png" sizes="32x32"><link rel="icon" href="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-16-at-5.10.50-PM-298x300.png" sizes="192x192"><link rel="apple-touch-icon-precomposed" href="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-16-at-5.10.50-PM-298x300.png"><meta name="msapplication-TileImage" content="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-16-at-5.10.50-PM-360x360.png"><style type="text/css" id="wp-custom-css">
+			.atu-agency-video img {
+	display: none !important;
+}
+.atu-agency-video .eicon-play {
+	font-size: 62px;
+}
+.atu-agency-video .elementor-custom-embed-image-overlay {
+	height: 60px;
+}
+.atu-agency-progress .elementor-progress-wrapper {
+	height: 8px;
+	line-height: 8px;
+}
+.atu-agency-progress .elementor-progress-percentage {
+	position: relative;
+	top: -16px;
+	font-weight: 500;
+	font-size: 14px;
+}
+.athemes-blog:not(.atu_athemes_blog_skin) .posted-on a {
+	color: #df2176;
+}
+.atu-agency-testimonials .elementor-testimonial-meta::after {
+	content: "f10e";
+	font-family: Fontawesome;
+	float: right;
+	color: #ebebeb;
+	font-size: 32px;
+	position: relative;
+	top: 5px;
+}
+
+/* Contact page map */
+.contact-page-map #atu-map {
+	height: 400px;
+}
+.contact-page-form label,
+.contact-page-form input:not(.wpcf7-submit),
+.contact-page-form select {
+	width: 100%;
+	max-width: 100%;
+}
+.contact-page-form select {
+	padding: 17px 20px;
+}
+.contact-page-form .wpcf7-submit {
+	width: auto;
+	margin: 0 auto;
+	display: table;
+	border-radius: 30px;
+	box-shadow: 0 5px 35px 0 rgba(51, 51, 51, 0.26);
+}
+.contact-page-form .row {
+	margin-bottom: 10px;
+}
+.site-header {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+}
+button, .button, input[type="button"], input[type="reset"], input[type="submit"] {
+	border-radius: 30px;
+}
+.page-id-198 #masthead {
+	background-color: #13151d;
+}
+
+.site-footer {
+	visibility: hidden;
+}		</style></head><body class="home page-template page-template-page-templates page-template-template_page-builder page-template-page-templatestemplate_page-builder-php page page-id-203 wp-custom-logo menuStyle1 menuNotContained sticky-header elementor-default elementor-page elementor-page-203">
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		
+<header id="masthead" class="site-header"><div class="container-fluid">
+		<div class="row">
+		<div class="site-branding col-md-4 col-sm-6 col-9">
+				<a href="https://jsbryce1.github.io/devdesign/" class="custom-logo-link" rel="home" itemprop="url"><img width="231" height="103" src="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/cropped-light-2.png" class="custom-logo" alt="Jared Bryce" itemprop="logo"></a>			</div>
+
+			<div class="header-mobile-menu col-md-8 col-sm-6 col-3">
+				<button class="mobile-menu-toggle" aria-controls="primary-menu">
+					<span class="mobile-menu-toggle_lines"></span>
+					<span class="sr-only">Toggle mobile menu</span>
+				</button>
+			</div>			
+
+			<nav id="site-navigation" class="main-navigation col-md-8"><div class="menu-menu-container"><ul id="primary-menu" class="menu"><li id="menu-item-616" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-203 current_page_item menu-item-616"><a href="https://jsbryce1.github.io/devdesign/">Home</a></li>
+<li id="menu-item-613" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-613"><a href="https://jsbryce1.github.io/devdesign/portfolio/">Portfolio</a></li>
+<li id="menu-item-614" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-614"><a href="https://jsbryce1.github.io/devdesign/about/">About</a></li>
+<li id="menu-item-615" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-615"><a href="https://jsbryce1.github.io/devdesign/contact/">Contact</a></li>
+</ul></div>						<ul class="header-search-cart"><li class="header-search">
+				<div class="header-search-toggle"><a><i class="fa fa-search"></i></a></div>
+			</li>
+						<li class="header-cart-link">
+							</li>
+		</ul></nav></div>
+	</div>
+	<div class="header-search-form">
+		<form role="search" method="get" class="search-form" action="https://jsbryce1.github.io/devdesign/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s"></label>
+				<input type="submit" class="search-submit" value="Search"></form>	</div>
+
+
+</header><div id="content" class="site-content">
+
+	
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main"><div class="elementor elementor-203">
+			<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+							<section data-id="5cb8b6d" class="elementor-element elementor-element-5cb8b6d elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle elementor-section elementor-top-section" data-settings='{"background_background":"classic"}' data-element_type="section"><div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div data-id="b907772" class="elementor-element elementor-element-b907772 elementor-column elementor-col-100 elementor-top-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="6f6e030" class="elementor-element elementor-element-6f6e030 elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Development &amp; Design</h2>		</div>
+				</div>
+				<div data-id="b9bccaa" class="elementor-element elementor-element-b9bccaa elementor-widget elementor-widget-text-editor" data-element_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Building the web around you</p></div>
+				</div>
+				</div>
+				<div data-id="be5e841" class="elementor-element elementor-element-be5e841 elementor-align-center elementor-widget elementor-widget-button" data-element_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://jsbryce1.github.io/devdesign/home-2/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">request consultation</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section><section data-id="fbc8976" class="elementor-element elementor-element-fbc8976 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-element_type="section"><div class="elementor-container elementor-column-gap-wide">
+				<div class="elementor-row">
+				<div data-id="f591a66" class="elementor-element elementor-element-f591a66 elementor-column elementor-col-50 elementor-top-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="00865d6" class="elementor-element elementor-element-00865d6 elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Focused On Building &amp; Growing your Online presence</h2>		</div>
+				</div>
+				<div data-id="5eb3b73" class="elementor-element elementor-element-5eb3b73 elementor-widget elementor-widget-text-editor" data-element_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Building &amp; Designing Modern, Responsive websites from concept to launch catered to fit your companies specific needs</p></div>
+				</div>
+				</div>
+				<div data-id="6477d8a" class="elementor-element elementor-element-6477d8a elementor-widget elementor-widget-text-editor" data-element_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Building, updating &amp; maintaining websites, apps &amp; WordPress sites for this modern age</p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div data-id="3917de8" class="elementor-element elementor-element-3917de8 elementor-column elementor-col-50 elementor-top-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="b327377" class="elementor-element elementor-element-b327377 elementor-widget elementor-widget-image" data-element_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="1024" height="768" src="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/greg-rakozy-129733-unsplash-1-1024x768.jpg" class="attachment-large size-large" alt="" srcset="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/greg-rakozy-129733-unsplash-1-1024x768.jpg 1024w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/greg-rakozy-129733-unsplash-1-300x225.jpg 300w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/greg-rakozy-129733-unsplash-1-768x576.jpg 768w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/greg-rakozy-129733-unsplash-1-640x480.jpg 640w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/greg-rakozy-129733-unsplash-1-667x500.jpg 667w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/greg-rakozy-129733-unsplash-1-720x540.jpg 720w" sizes="(max-width: 1024px) 100vw, 1024px"></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section><section data-id="dedf6f2" class="elementor-element elementor-element-dedf6f2 atu-agency-video elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-settings='{"background_background":"classic"}' data-element_type="section"><div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div data-id="636b818" class="elementor-element elementor-element-636b818 elementor-column elementor-col-100 elementor-top-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="98c2a79" class="elementor-element elementor-element-98c2a79 elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h5 class="elementor-heading-title elementor-size-default">Website solutions</h5>		</div>
+				</div>
+				<div data-id="909e264" class="elementor-element elementor-element-909e264 elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Learn more about me</h2>		</div>
+				</div>
+				<div data-id="d22c608" class="elementor-element elementor-element-d22c608 elementor-align-center elementor-widget elementor-widget-button" data-element_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://jsbryce1.github.io/devdesign/about-us/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Read More</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section><section data-id="cc5b436" class="elementor-element elementor-element-cc5b436 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-settings='{"background_background":"classic"}' data-element_type="section"><div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div data-id="f6f4bb5" class="elementor-element elementor-element-f6f4bb5 elementor-column elementor-col-100 elementor-top-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="9bad62a" class="elementor-element elementor-element-9bad62a elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">MY SERVICES</h1>		</div>
+				</div>
+				<div data-id="f82bfca" class="elementor-element elementor-element-f82bfca elementor-widget elementor-widget-text-editor" data-element_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Plan | Design | Code | Test</p><p><span style="color: #464545; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; text-align: start; background-color: #ffffff;">I build &amp; design websites &amp; apps from concept to launch.</span></p></div>
+				</div>
+				</div>
+				<div data-id="3352f1f" class="elementor-element elementor-element-3352f1f elementor-widget elementor-widget-text-editor" data-element_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p><span style="background-color: #ffffff; color: #464545; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 14px; text-align: start;">All of my designs are completely unique and built to each client&rsquo;s taste and specifications.&nbsp;</span></p></div>
+				</div>
+				</div>
+				<section data-id="bc1302a" class="elementor-element elementor-element-bc1302a elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-inner-section" data-element_type="section"><div class="elementor-container elementor-column-gap-wider">
+				<div class="elementor-row">
+				<div data-id="936eee0" class="elementor-element elementor-element-936eee0 elementor-column elementor-col-33 elementor-inner-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="2d6f36c" class="elementor-element elementor-element-2d6f36c elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-element_type="image-box.default">
+				<div class="elementor-widget-container">
+			<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img width="48" height="39" src="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/06/i3.png" class="attachment-full size-full" alt=""></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Consultation</h3><p class="elementor-image-box-description">I am available by phone, email, skype or in person. During our initial meeting we will talk about the scope of the project, timeline, design specifics and figure out a cost </p></div></div>		</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div data-id="7cf8841" class="elementor-element elementor-element-7cf8841 elementor-column elementor-col-33 elementor-inner-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="fe9e4fb" class="elementor-element elementor-element-fe9e4fb elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-element_type="image-box.default">
+				<div class="elementor-widget-container">
+			<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img width="48" height="48" src="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/06/i1.png" class="attachment-full size-full" alt=""></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Design</h3><p class="elementor-image-box-description">I create custom designed responsive websites built to showcase just what makes my clients unique so that they stand out from the competition </p></div></div>		</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div data-id="0936230" class="elementor-element elementor-element-0936230 elementor-column elementor-col-33 elementor-inner-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="8af58ca" class="elementor-element elementor-element-8af58ca elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-element_type="image-box.default">
+				<div class="elementor-widget-container">
+			<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img width="48" height="48" src="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/06/i2.png" class="attachment-full size-full" alt=""></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Development</h3><p class="elementor-image-box-description">I build websites using the latest technologies &amp; the cleanest code. I create and build each page to make the whole site aesthetically congruent and efficiently coded</p></div></div>		</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section><div data-id="aa95fc4" class="elementor-element elementor-element-aa95fc4 elementor-align-center elementor-widget elementor-widget-button" data-element_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://jsbryce1.github.io/devdesign/about-us/" class="elementor-button-link elementor-button elementor-size-md" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-icon elementor-align-icon-right">
+				<i class="fa fa-angle-double-right" aria-hidden="true"></i>
+			</span>
+						<span class="elementor-button-text">About</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section><section data-id="c0e1e83" class="elementor-element elementor-element-c0e1e83 elementor-section-full_width elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-element_type="section"><div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div data-id="1dfc573" class="elementor-element elementor-element-1dfc573 elementor-column elementor-col-100 elementor-top-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="cac512e" class="elementor-element elementor-element-cac512e elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">MY WORK SAMPLES</h1>		</div>
+				</div>
+				<div data-id="2005d4c" class="elementor-element elementor-element-2005d4c elementor-align-center elementor-widget elementor-widget-button" data-element_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://jsbryce1.github.io/devdesign/home-3-2/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Go to portfolio</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+				<div data-id="d6e69fb" class="elementor-element elementor-element-d6e69fb elementor-widget elementor-widget-text-editor" data-element_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"></div>
+				</div>
+				</div>
+				<div data-id="91f1377" class="elementor-element elementor-element-91f1377 elementor-widget elementor-widget-image-gallery" data-element_type="image-gallery.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-gallery">
+			<div id="gallery-1" class="gallery galleryid-203 gallery-columns-4 gallery-size-medium_large"><figure class="gallery-item"><div class="gallery-icon landscape">
+				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="91f1377" href="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-15-at-8.33.56-PM.png"><img width="768" height="481" src="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-15-at-8.33.56-PM-768x481.png" class="attachment-medium_large size-medium_large" alt="" srcset="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-15-at-8.33.56-PM-768x481.png 768w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-15-at-8.33.56-PM-300x188.png 300w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-15-at-8.33.56-PM-1024x641.png 1024w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-15-at-8.33.56-PM-640x400.png 640w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-15-at-8.33.56-PM-799x500.png 799w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-15-at-8.33.56-PM-720x451.png 720w" sizes="(max-width: 768px) 100vw, 768px"></a>
+			</div></figure><figure class="gallery-item"><div class="gallery-icon landscape">
+				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="91f1377" href="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-15-at-9.00.53-PM-2.png"><img width="768" height="480" src="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-15-at-9.00.53-PM-2-768x480.png" class="attachment-medium_large size-medium_large" alt="" srcset="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-15-at-9.00.53-PM-2-768x480.png 768w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-15-at-9.00.53-PM-2-300x187.png 300w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-15-at-9.00.53-PM-2-1024x640.png 1024w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-15-at-9.00.53-PM-2-640x400.png 640w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-15-at-9.00.53-PM-2-800x500.png 800w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-15-at-9.00.53-PM-2-720x450.png 720w" sizes="(max-width: 768px) 100vw, 768px"></a>
+			</div></figure><figure class="gallery-item"><div class="gallery-icon landscape">
+				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="91f1377" href="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-25-at-6.24.01-PM.png"><img width="768" height="480" src="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-25-at-6.24.01-PM-768x480.png" class="attachment-medium_large size-medium_large" alt="" srcset="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-25-at-6.24.01-PM-768x480.png 768w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-25-at-6.24.01-PM-300x188.png 300w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-25-at-6.24.01-PM-1024x640.png 1024w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-25-at-6.24.01-PM-640x400.png 640w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-25-at-6.24.01-PM-800x500.png 800w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-25-at-6.24.01-PM-720x450.png 720w" sizes="(max-width: 768px) 100vw, 768px"></a>
+			</div></figure><figure class="gallery-item"><div class="gallery-icon landscape">
+				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="91f1377" href="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-16-at-6.44.38-PM-1.png"><img width="768" height="479" src="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-16-at-6.44.38-PM-1-768x479.png" class="attachment-medium_large size-medium_large" alt="" srcset="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-16-at-6.44.38-PM-1-768x479.png 768w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-16-at-6.44.38-PM-1-300x187.png 300w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-16-at-6.44.38-PM-1-1024x639.png 1024w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-16-at-6.44.38-PM-1-640x399.png 640w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-16-at-6.44.38-PM-1-802x500.png 802w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-16-at-6.44.38-PM-1-720x449.png 720w" sizes="(max-width: 768px) 100vw, 768px"></a>
+			</div></figure><figure class="gallery-item"><div class="gallery-icon landscape">
+				<a data-elementor-open-lightbox="yes" data-elementor-lightbox-slideshow="91f1377" href="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-15-at-9.01.22-PM.png"><img width="768" height="480" src="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-15-at-9.01.22-PM-768x480.png" class="attachment-medium_large size-medium_large" alt="" srcset="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-15-at-9.01.22-PM-768x480.png 768w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-15-at-9.01.22-PM-300x188.png 300w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-15-at-9.01.22-PM-1024x640.png 1024w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-15-at-9.01.22-PM-640x400.png 640w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-15-at-9.01.22-PM-800x500.png 800w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/Screen-Shot-2018-11-15-at-9.01.22-PM-720x450.png 720w" sizes="(max-width: 768px) 100vw, 768px"></a>
+			</div></figure></div>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section><section data-id="95c1080" class="elementor-element elementor-element-95c1080 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-element_type="section"><div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div data-id="d62a087" class="elementor-element elementor-element-d62a087 elementor-column elementor-col-50 elementor-top-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="21b6988" class="elementor-element elementor-element-21b6988 elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Staying in touch</h2>		</div>
+				</div>
+				<div data-id="2b03a3b" class="elementor-element elementor-element-2b03a3b elementor-widget elementor-widget-text-editor" data-element_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>I work directly with my clients from our initial consultation through website launch. Communication is important to me, &amp; together we will achieve your project goals in a timely manner.</p><p><span style="background-color: transparent;">It is important to me to have clear and regular communication. T</span>hrough phone, text, email or in person, you can be confident that your ideas and goals will be heard and met.</p></div>
+				</div>
+				</div>
+				<div data-id="43e23a7" class="elementor-element elementor-element-43e23a7 atu-agency-progress elementor-widget elementor-widget-progress" data-element_type="progress.default">
+				<div class="elementor-widget-container">
+						<span class="elementor-title">Project planning</span>
+		
+		<div class="elementor-progress-wrapper" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" aria-valuetext="">
+			<div class="elementor-progress-bar" data-max="100">
+				<span class="elementor-progress-text"></span>
+							</div>
+		</div>
+				</div>
+				</div>
+				<div data-id="a05736f" class="elementor-element elementor-element-a05736f atu-agency-progress elementor-widget elementor-widget-progress" data-element_type="progress.default">
+				<div class="elementor-widget-container">
+						<span class="elementor-title">Design</span>
+		
+		<div class="elementor-progress-wrapper" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100" aria-valuetext="">
+			<div class="elementor-progress-bar" data-max="100">
+				<span class="elementor-progress-text"></span>
+							</div>
+		</div>
+				</div>
+				</div>
+				<div data-id="d92aaf0" class="elementor-element elementor-element-d92aaf0 atu-agency-progress elementor-widget elementor-widget-progress" data-element_type="progress.default">
+				<div class="elementor-widget-container">
+						<span class="elementor-title">Development</span>
+		
+		<div class="elementor-progress-wrapper" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="88" aria-valuetext="">
+			<div class="elementor-progress-bar" data-max="88">
+				<span class="elementor-progress-text"></span>
+							</div>
+		</div>
+				</div>
+				</div>
+				<div data-id="a10052c" class="elementor-element elementor-element-a10052c atu-agency-progress elementor-widget elementor-widget-progress" data-element_type="progress.default">
+				<div class="elementor-widget-container">
+						<span class="elementor-title">Website Launch</span>
+		
+		<div class="elementor-progress-wrapper" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80" aria-valuetext="">
+			<div class="elementor-progress-bar" data-max="80">
+				<span class="elementor-progress-text"></span>
+							</div>
+		</div>
+				</div>
+				</div>
+				<div data-id="efefd85" class="elementor-element elementor-element-efefd85 elementor-widget elementor-widget-html" data-element_type="html.default">
+				<div class="elementor-widget-container">
+			<a style="text-align:center; color:black;" class="button" href="tel:801-828-5033">Make the call</a>		</div>
+				</div>
+				<div data-id="f064795" class="elementor-element elementor-element-f064795 elementor-widget elementor-widget-text-editor" data-element_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Communication after your website has been built can be a great asset to your company. A website that receives regular updates to its homepage and page content will keep it fresh and interesting. As your company grows, I can ensure that your website grows with you</p></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+				<div data-id="a5a23ed" class="elementor-element elementor-element-a5a23ed animated zoomIn elementor-invisible elementor-column elementor-col-50 elementor-top-column" data-settings='{"animation":"zoomIn"}' data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="3f94a50" class="elementor-element elementor-element-3f94a50 elementor-widget elementor-widget-image" data-element_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="921" height="908" src="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/macbookpro.png" class="attachment-large size-large" alt="" srcset="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/macbookpro.png 921w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/macbookpro-300x296.png 300w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/macbookpro-768x757.png 768w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/macbookpro-487x480.png 487w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/macbookpro-507x500.png 507w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/macbookpro-640x631.png 640w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/macbookpro-720x710.png 720w" sizes="(max-width: 921px) 100vw, 921px"></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section><section data-id="6ef816b" class="elementor-element elementor-element-6ef816b elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-element_type="section"><div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div data-id="d307dc7" class="elementor-element elementor-element-d307dc7 elementor-column elementor-col-100 elementor-top-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="0601bcb" class="elementor-element elementor-element-0601bcb elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Professional Education - Coding Bootcamp Full Stack Developer Certificate</h2>		</div>
+				</div>
+				<div data-id="b7e23d8" class="elementor-element elementor-element-b7e23d8 elementor-position-top elementor-vertical-align-top elementor-widget elementor-widget-image-box" data-element_type="image-box.default">
+				<div class="elementor-widget-container">
+			<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><a href="https://www.youracclaim.com/badges/3059bf64-0c4f-4baa-b3b0-6236e649af71/public_url"><img width="352" height="352" src="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/professional-education-coding-bootcamp-full-stack-developer-certificate-2.png" class="elementor-animation-grow attachment-hi-res size-hi-res" alt="" srcset="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/professional-education-coding-bootcamp-full-stack-developer-certificate-2.png 352w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/professional-education-coding-bootcamp-full-stack-developer-certificate-2-150x150.png 150w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/professional-education-coding-bootcamp-full-stack-developer-certificate-2-300x300.png 300w" sizes="(max-width: 352px) 100vw, 352px"></a></figure></div>		</div>
+				</div>
+				<div data-id="76894b7" class="elementor-element elementor-element-76894b7 elementor-widget elementor-widget-text-editor" data-element_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><h6 style="font-size: 13px; text-align: center;"><span style="font-style: italic; color: #63def4; text-align: right;">*click image for more info</span></h6><div style="text-align: center;">I have demonstrated working knowledge of Bootstrap, CSS, Express.js, Git, Github, Heroku, HTML (HTML5), JavaScript, JQuery, MongoDB, MySQL, Node.js, React, SEO, Responsive Design, API/JSON, RESTful API, State Management, Command Line, Database Theory, Agile Methodologies, Quality Assurance Testing, Social Coding Best Practices, Computer Science Fundamentals.. I worked with teams to build fully functional web applications.</div></div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section><section data-id="dbb76d7" class="elementor-element elementor-element-dbb76d7 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-settings='{"background_background":"classic"}' data-element_type="section"><div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div data-id="e3616e7" class="elementor-element elementor-element-e3616e7 elementor-column elementor-col-100 elementor-top-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="f89bd90" class="elementor-element elementor-element-f89bd90 elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Let's talk about your next project</h2>		</div>
+				</div>
+				<div data-id="98d4229" class="elementor-element elementor-element-98d4229 elementor-widget elementor-widget-text-editor" data-element_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p>Consultation is always free</p></div>
+				</div>
+				</div>
+				<div data-id="0d4d8d8" class="elementor-element elementor-element-0d4d8d8 elementor-align-center elementor-widget elementor-widget-button" data-element_type="button.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-button-wrapper">
+			<a href="https://jsbryce1.github.io/devdesign/home-2/" class="elementor-button-link elementor-button elementor-size-sm" role="button">
+						<span class="elementor-button-content-wrapper">
+						<span class="elementor-button-text">Request a Consultation</span>
+		</span>
+					</a>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section><section data-id="470da8b" class="elementor-element elementor-element-470da8b elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section" data-element_type="section"><div class="elementor-container elementor-column-gap-default">
+				<div class="elementor-row">
+				<div data-id="e0e53d9" class="elementor-element elementor-element-e0e53d9 elementor-column elementor-col-100 elementor-top-column" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div data-id="1a1f0d0" class="elementor-element elementor-element-1a1f0d0 elementor-widget elementor-widget-image" data-element_type="image.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image">
+										<img width="1024" height="768" src="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/UNADJUSTEDNONRAW_thumb_6.jpg" class="attachment-hi-res size-hi-res" alt="" srcset="https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/UNADJUSTEDNONRAW_thumb_6.jpg 1024w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/UNADJUSTEDNONRAW_thumb_6-300x225.jpg 300w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/UNADJUSTEDNONRAW_thumb_6-768x576.jpg 768w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/UNADJUSTEDNONRAW_thumb_6-640x480.jpg 640w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/UNADJUSTEDNONRAW_thumb_6-667x500.jpg 667w, https://jsbryce1.github.io/devdesign/wp-content/uploads/2018/11/UNADJUSTEDNONRAW_thumb_6-720x540.jpg 720w" sizes="(max-width: 1024px) 100vw, 1024px"></div>
+				</div>
+				</div>
+				<div data-id="aae6899" class="elementor-element elementor-element-aae6899 elementor-widget elementor-widget-heading" data-element_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Jared Bryce<span style="font-size: 22px; text-align: center;"></span><br><span style="color: rgb(191, 191, 191); font-size: 14px;">Web Designer and Developer</span><span style="color: rgb(191, 191, 191); font-size: 14px;"></span></h2>		</div>
+				</div>
+						</div>
+			</div>
+		</div>
+						</div>
+			</div>
+		</section></div>
+			</div>
+		</div>
+					
+		</main></div>
+
+
+	</div>
+
+	
+	
+	
+	
+	<div id="sidebar-footer" class="footer-widgets" role="complementary">
+		<div class="container">
+			<div class="row">
+							<div class="sidebar-column col-md-12">
+					<section id="text-2" class="widget widget_text"><div class="textwidget"><div style="text-align: center; width:100%;"><span style="color: #bfbfbf; width:100%;">&nbsp;&copy; 2018 Jared Bryce | JB devdesign | Email: <a href="mailto:jsbryce317@gmail.com?subject=Consultation%20Request">jsbryce317@gmail.com&nbsp;</a>| Phone:&nbsp;<a href="tel:801-828-5033">801-828-5033</a></span></div>
+</div>
+		</section></div>
+				
+				
+								
+			</div>	
+		</div>	
+	</div>
+	<footer id="colophon" class="site-footer"><div class="container">
+			<div class="row">
+					
+	<div class="site-info col-md-12">
+		
+					<a href="https://wordpress.org/">Proudly powered by WordPress</a>
+			<span class="sep"> | </span>
+			Theme: <a href="https://athemes.com/theme/airi">Airi</a> by aThemes.			</div>
+	
+				</div>
+		</div>
+	</footer></div>
+
+		
+		<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="pswp__bg"></div>
+			<div class="pswp__scroll-wrap">
+				<div class="pswp__container">
+					<div class="pswp__item"></div>
+					<div class="pswp__item"></div>
+					<div class="pswp__item"></div>
+				</div>
+				<div class="pswp__ui pswp__ui--hidden">
+					<div class="pswp__top-bar">
+						<div class="pswp__counter"></div>
+						<button class="pswp__button pswp__button--close" title="Close (Esc)"><span class="sr-only">Close</span></button>
+						<button class="pswp__button pswp__button--share" title="Share"><span class="sr-only">Share</span></button>
+						<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"><span class="sr-only">Toggle Fullscreen</span></button>
+						<button class="pswp__button pswp__button--zoom" title="Zoom in/out"><span class="sr-only">Zoom</span></button>
+						<div class="pswp__preloader">
+							<div class="pswp__preloader__icn">
+								<div class="pswp__preloader__cut">
+									<div class="pswp__preloader__donut"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+						<div class="pswp__share-tooltip"></div>
+					</div>
+					<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"><span class="sr-only">Previous</span></button>
+					<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"><span class="sr-only">Next</span></button>
+					<div class="pswp__caption">
+						<div class="pswp__caption__center"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<style></style><script type="text/javascript" src="https://jsbryce1.github.io/devdesign/wp-content/plugins/elementor/assets/lib/slick/slick.min.js"></script><script type="text/javascript" src="https://jsbryce1.github.io/devdesign/wp-includes/js/imagesloaded.min.js"></script><script type="text/javascript" src="https://jsbryce1.github.io/devdesign/wp-content/themes/airi/js/vendor/navigation.js"></script><script type="text/javascript">
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/jsbryce1.github.io\/devdesign\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script><script type="text/javascript" src="https://jsbryce1.github.io/devdesign/wp-content/plugins/contact-form-7/includes/js/scripts.js"></script><script type="text/javascript" src="https://jsbryce1.github.io/devdesign/wp-content/plugins/fusion/includes/bootstrap/front/js/bootstrap.min.js"></script><script type="text/javascript" src="https://jsbryce1.github.io/devdesign/wp-content/plugins/fusion/includes/js/modernizr-3.3.1-respond-1.4.2.min.js"></script><script type="text/javascript" src="https://jsbryce1.github.io/devdesign/wp-content/plugins/fusion/includes/utilities/imagesloaded/imagesloaded.pkgd.min.js"></script><script type="text/javascript">
+/* <![CDATA[ */
+var fsnAjax = {"ajaxurl":"https:\/\/jsbryce1.github.io\/devdesign\/wp-admin\/admin-ajax.php","pluginurl":"https:\/\/jsbryce1.github.io\/devdesign\/wp-content\/plugins\/fusion\/"};
+/* ]]> */
+</script><script type="text/javascript" src="https://jsbryce1.github.io/devdesign/wp-content/plugins/fusion/includes/js/fusion-core.js"></script><script type="text/javascript" src="https://jsbryce1.github.io/devdesign/wp-content/themes/airi/js/vendor/skip-link-focus-fix.js"></script><script type="text/javascript" src="https://jsbryce1.github.io/devdesign/wp-content/themes/airi/js/vendor/scripts.js"></script><script type="text/javascript" src="https://jsbryce1.github.io/devdesign/wp-content/themes/airi/js/custom/custom.min.js"></script><script type="text/javascript" src="https://jsbryce1.github.io/devdesign/wp-includes/js/wp-embed.min.js"></script><script type="text/javascript" src="https://jsbryce1.github.io/devdesign/wp-content/plugins/kirki/modules/webfont-loader/vendor-typekit/webfontloader.js"></script><script type="text/javascript">
+WebFont.load({google:{families:['Work Sans:500,400:cyrillic,cyrillic-ext,devanagari,greek,greek-ext,khmer,latin,latin-ext,vietnamese,hebrew,arabic,bengali,gujarati,tamil,telugu,thai']}});
+</script><script type="text/javascript" src="https://jsbryce1.github.io/devdesign/wp-includes/js/jquery/ui/position.min.js"></script><script type="text/javascript" src="https://jsbryce1.github.io/devdesign/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js"></script><script type="text/javascript" src="https://jsbryce1.github.io/devdesign/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js"></script><script type="text/javascript" src="https://jsbryce1.github.io/devdesign/wp-content/plugins/elementor/assets/lib/swiper/swiper.jquery.min.js"></script><script type="text/javascript">
+/* <![CDATA[ */
+var elementorFrontendConfig = {"isEditMode":"","is_rtl":"","breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"2.3.8","urls":{"assets":"https:\/\/jsbryce1.github.io\/devdesign\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"general":{"elementor_global_image_lightbox":"yes","elementor_enable_lightbox_in_editor":"yes"}},"post":{"id":203,"title":"Home","excerpt":""}};
+/* ]]> */
+</script><script type="text/javascript" src="https://jsbryce1.github.io/devdesign/wp-content/plugins/elementor/assets/js/frontend.min.js"></script></body></html>

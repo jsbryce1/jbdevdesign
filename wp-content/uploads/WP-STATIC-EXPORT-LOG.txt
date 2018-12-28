@@ -1,0 +1,49 @@
+STARTING EXPORT: 2018-12-28 10:33:50
+STARTING EXPORT: PHP VERSION 7.2.10
+STARTING EXPORT: OS VERSION Darwin Jareds-MacBook-Pro.local 18.2.0 Darwin Kernel Version 18.2.0: Mon Nov 12 20:24:46 PST 2018; root:xnu-4903.231.4~2/RELEASE_X86_64 x86_64
+STARTING EXPORT: WP VERSION 5.0.2
+STARTING EXPORT: WP URL http://localhost:8888/sego
+STARTING EXPORT: WP SITEURL http://localhost:8888/sego
+STARTING EXPORT: WP HOME http://localhost:8888/sego
+STARTING EXPORT: WP ADDRESS http://localhost:8888/sego
+STARTING EXPORT: PLUGIN VERSION 6.1
+STARTING EXPORT: VIA WP-CLI? 
+STARTING EXPORT: STATIC EXPORT URL https://jsbryce1.github.io/devdesign/
+BAD RESPONSE STATUS (404): /robots.txt
+BAD RESPONSE STATUS (404): /favicon.ico
+BAD RESPONSE STATUS (404): /sitemap.xml
+BAD RESPONSE STATUS (404): sego//wp-content/themes/airi/inc/demo-content/demo-widgets.wie
+BAD RESPONSE STATUS (404): sego//wp-content/themes/airi/inc/demo-content/demo-customizer.dat
+BAD RESPONSE STATUS (404): sego//wp-content/themes/airi/inc/demo-content/demo-content.xml
+BAD RESPONSE STATUS (404): sego//wp-content/themes/airi/css/bootstrap/bootstrap.min.css
+BAD RESPONSE STATUS (404): sego//wp-content/themes/airi/css/bootstrap/bootstrap.css
+BAD RESPONSE STATUS (404): sego//wp-content/themes/airi/css/bootstrap/bootstrap-grid.min.css
+BAD RESPONSE STATUS (404): sego//wp-content/themes/airi/css/bootstrap/bootstrap-reboot.min.css
+BAD RESPONSE STATUS (404): sego//wp-content/themes/airi/css/bootstrap/bootstrap-reboot.css
+BAD RESPONSE STATUS (404): sego//wp-content/themes/airi/css/bootstrap/bootstrap-grid.css
+BAD RESPONSE STATUS (404): sego//wp-content/themes/airi/css/font-awesome/css/font-awesome.css
+BAD RESPONSE STATUS (404): sego//wp-content/themes/airi/css/font-awesome/css/font-awesome.min.css
+BAD RESPONSE STATUS (404): sego//wp-content/themes/airi/css/font-awesome/fonts/fontawesome-webfont.svg
+BAD RESPONSE STATUS (404): sego//wp-content/themes/airi/css/font-awesome/fonts/FontAwesome.otf
+BAD RESPONSE STATUS (404): sego//wp-content/themes/airi/css/font-awesome/fonts/fontawesome-webfont.woff2
+BAD RESPONSE STATUS (404): sego//wp-content/themes/airi/css/font-awesome/fonts/fontawesome-webfont.ttf
+BAD RESPONSE STATUS (404): sego//wp-content/themes/airi/css/font-awesome/fonts/fontawesome-webfont.woff
+BAD RESPONSE STATUS (404): sego//wp-content/themes/airi/css/font-awesome/fonts/fontawesome-webfont.eot
+BAD RESPONSE STATUS (404): sego//wp-content/themes/airi/images/icon.png
+BAD RESPONSE STATUS (404): sego//wp-content/themes/airi/images/raw/icon.png
+BAD RESPONSE STATUS (404): sego//wp-content/themes/airi/js/admin/customizer.js
+BAD RESPONSE STATUS (404): sego//wp-content/themes/airi/js/custom/custom.js
+BAD RESPONSE STATUS (404): sego//wp-content/themes/airi/js/custom/custom.min.js
+BAD RESPONSE STATUS (404): sego//wp-content/themes/airi/screenshot.png
+BAD RESPONSE STATUS (404): sego//wp-content/themes/airi/style.css
+BAD RESPONSE STATUS (404): /sego/
+BAD RESPONSE STATUS (404): /sego/2018/
+BAD RESPONSE STATUS (404): /sego/2018/06/
+BAD RESPONSE STATUS (404): /sego/2018/06/25/
+BAD RESPONSE STATUS (404): /sego/2018/11/
+BAD RESPONSE STATUS (404): /sego/2018/11/15/
+BAD RESPONSE STATUS (404): http://localhost:8888/sego/http://localhost:8888/sego/wp-includes/js/wp-emoji-release.min.js
+BAD RESPONSE STATUS (404): /home-2/
+BAD RESPONSE STATUS (404): /home-3-2/
+SAVING URL: FILE IS EMPTY /wp-content/plugins/kirki/assets/css/kirki-styles.css
+Target Directory wasn't empty or didn't contain safety file /Users/jaredbryce/new-dev/devdesign/
